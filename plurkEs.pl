@@ -20,10 +20,9 @@
 #y plurkear de esta forma: plurkEs.pl -a <action> <message>
 #Nombre de usuario o apodo:
 #use constant USERNAME => 'apodo';
-use constant USERNAME => 'zahori';
+
 #Contraseña:
 #use constant PASSWORD => 'contraseña';
-use constant PASSWORD => 'antofagasta24';
 
 ##############################################################
 # Cuidado: A PARTIR DE ESTA PARTE YA NO ES NECESARIO EDITAR! #

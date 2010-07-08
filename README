@@ -1,0 +1,12 @@
+In this repo I include some customized scripts and
+applications to plurk. 
+#Apps:
+---------------------------------------------------------
+command-line-plurker (aka plurkEs.pl)
+This is a Perl program
+translated to Spanish. It is a  
+customization of pkrumins (http://www.plurk.com/pkrumins)
+program called "command-line-plurker".
+Basic usage: 
+plurkEs.pl Ya estoy \(hungry\)
+plurkEs.pl -a shares http://www.youtube.com/watch?v=QcPvHkXfqoc \(Algo de The Clash para empezar\)

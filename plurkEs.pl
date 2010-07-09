@@ -22,7 +22,7 @@
 use constant USERNAME => 'apodo';
 
 #Contraseña:
-use constant PASSWORD => 'contrase�a';
+use constant PASSWORD => 'contraseña';
 
 
 ##############################################################

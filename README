@@ -10,3 +10,4 @@ program called "command-line-plurker".
 Basic usage: 
 plurkEs.pl Ya estoy \(hungry\)
 plurkEs.pl -a shares http://www.youtube.com/watch?v=QcPvHkXfqoc \(Algo de The Clash para empezar\)
+You should use the flag (?): plurkEs.pl ?

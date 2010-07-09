@@ -2,12 +2,25 @@ In this repo I include some customized scripts and
 applications to plurk. 
 #Apps:
 ---------------------------------------------------------
-command-line-plurker (aka plurkEs.pl)
+### command-line-plurker (aka plurkEs.pl) ###
+#Description:
 This is a Perl program
 translated to Spanish. It is a  
 customization of pkrumins (http://www.plurk.com/pkrumins)
 program called "command-line-plurker".
+#Installation
+0. Requirements
+Perl modules required: WWW::Mechanize, LWP::UserAgent
+Before you  should check if these modules are installed:
+instmod (as root)
+if these modules are not installed:
+perl -MCPAN -e shell (as root)
+inside CPAN shell type: install module
+#Usage
+1. Just type ./plurkEs ? to see available options
 Basic usage: 
-plurkEs.pl Ya estoy \(hungry\)
 plurkEs.pl -a shares http://www.youtube.com/watch?v=QcPvHkXfqoc \(Algo de The Clash para empezar\)
-You should use the flag (?): plurkEs.pl ?
+In case you don not use a modifier action 'says' is default used:
+plurkEs.pl Ya estoy \(hungry\)
+Happy console plurking!!!
+---------------------------------------------------------

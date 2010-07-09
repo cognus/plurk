@@ -19,10 +19,10 @@
 #Puedes establecer tu nombre de usuario y contraseña en forma permanente
 #y plurkear de esta forma: plurkEs.pl -a <action> <message>
 #Nombre de usuario o apodo:
-#use constant USERNAME => 'apodo';
+use constant USERNAME => 'apodo';
 
 #Contraseña:
-#use constant PASSWORD => 'contraseña';
+use constant PASSWORD => 'contrase�a';
 
 
 ##############################################################
@@ -42,7 +42,7 @@ Si omites el parámetro -a el plurk se puede hacer como:
     $ plurkEs.pl <message>
 
 #Compartir videos de youtube, enlaces y fotos es de la siguiente forma:
-plurkEs.pl -a shares http://... \(Texto\)
+plurkEs.pl -a shares http://... \(Texto\). Notar el uso de \\( y \\) al usar parentesis
 plurkEs.pl -a shares http://www.youtube.com/watch?v=QcPvHkXfqoc
 
 #Algunos emoticonos de uso frecuente y su uso:
@@ -79,11 +79,11 @@ my %modificadores=("ama" => "loves",
 print "-" x 64, "\n";
 print "Ejemplos de formas de uso:
 Con modificadores: Usar -a
-plurkEs.pl -a shares http://... \(Texto\)
+plurkEs.pl -a shares http://... \(Texto\). Notar el uso de \\( y \\) al usar parentesis
 plurkEs.pl -a shares http://www.youtube.com/watch?v=QcPvHkXfqoc
 En caso de que no utilices un modificador, se utiliza el modificador 'says' por defecto:
-plurkEs.pl Ya estoy \(hungry\)
-plurk estoy oyendo a Bozio Levin Stevens \(music\) http://www.youtube.com/watch?v=22t-lal7524&feature=related\n";
+plurkEs.pl Ya estoy \\(hungry\\)
+plurk estoy oyendo a Bozio Levin Stevens \\(music\\) http://www.youtube.com/watch?v=22t-lal7524&feature=related\n";
 print "-" x 64, "\n";
 print "Los modificadores disponibles son:\n";
 foreach $key (keys %modificadores){
@@ -91,11 +91,12 @@ foreach $key (keys %modificadores){
     print "$key = $valor\n";
 }
 print "-" x 64, "\n";
-print "Los emoticonos disponibles son:";
+print "Algunos de los emoticonos disponibles son:";
     print "
     \(wave\)
     \(music\)
     :-o
+    \(mmm\)
     \(hungry\)
     \(gym\)\n";
 exit;
@@ -114,7 +115,7 @@ use constant ACTIONS =>
        
     qw(loves likes shares gives hates wants wishes needs
        will hopes asks has was wonders feels
-       thinks says is);   
+       thinks says is :\(freestyle\));   
 
 my ($username, $password, $action, $message) = parse_args();
 print "$username\@$password $action '$message'\n" if DEBUG;

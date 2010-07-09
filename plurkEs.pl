@@ -24,6 +24,7 @@
 #Contraseña:
 #use constant PASSWORD => 'contraseña';
 
+
 ##############################################################
 # Cuidado: A PARTIR DE ESTA PARTE YA NO ES NECESARIO EDITAR! #
 ##############################################################
@@ -55,7 +56,47 @@ plurkEs.pl tengo \(hungry\)
 
 <Message> está limitado a no más de 140 caracteres.
 EOL
-
+if($#ARGV == "?"){  
+my %modificadores=("ama" => "loves",
+              "prefiere" => "likes",
+              "comparte" => "shares",
+              "ofrece" => "gives",
+              "odia" => "hates",
+              "quiere" => "wants",
+              "desea" => "whishes",
+              "necesita" => "needs",
+              "har\á" => "will",
+              "espera" => "hopes",
+              "pregunta" => "asks",
+              "tiene" => "has",
+              "estaba" => "was",
+              "pregunta" => "asks",
+              "siente" => "feels",
+              "piensa" => "thinks",
+              "dice" => "says",
+              "est\á" => "is"
+              );
+print "-" x 64, "\n";
+print "Ejemplos de formas de uso:
+plurkEs.pl -a shares http://... \(Texto\)
+plurkEs.pl -a shares http://www.youtube.com/watch?v=QcPvHkXfqoc
+plurk oyendo Bozio Levin Stevens \(music\) http://www.youtube.com/watch?v=22t-lal7524&feature=related\n";
+print "-" x 64, "\n";
+print "Los modificadores disponibles son:\n";
+foreach $key (keys %modificadores){
+    $valor = $modificadores{$key};
+    print "$key = $valor\n";
+}
+print "-" x 64, "\n";
+print "Los emoticonos disponibles son:";
+    print "
+    \(wave\)
+    \(music\)
+    :-o
+    \(hungry\)
+    \(gym\)\n";
+exit;
+}
 use strict;
 use warnings;
 use WWW::Mechanize;

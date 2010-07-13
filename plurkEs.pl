@@ -86,7 +86,7 @@ plurkEs.pl Ya estoy \\(hungry\\)
 plurk estoy oyendo a Bozio Levin Stevens \\(music\\) http://www.youtube.com/watch?v=22t-lal7524&feature=related\n";
 print "-" x 64, "\n";
 print "Los modificadores disponibles son:\n";
-foreach $key (keys %modificadores){
+foreach $key (sort keys %modificadores){
     $valor = $modificadores{$key};
     print "$key = $valor\n";
 }
